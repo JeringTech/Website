@@ -18,3 +18,7 @@ Every utility/product can have its own logo. Use SVGs with height 312px.
 
 ## Favicons
 The favicon for each utility/product should be the same image as the logo. Use https://realfavicongenerator.net/ to generate favicons and associated files.
+
+## Caching
+For maximum efficiency, all sites must use "infinite" browser caching for resources other than `.html` files: `Cache-Control: "public, max-age=31536000"`. When a resource changes, its name must change so that
+it is retrieved by the browser. Webpack takes care of bundles in this aspect, appending hashes to their names. We should automate generation of unique names for other resources too, like images and fonts.
