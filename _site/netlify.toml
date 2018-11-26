@@ -4,10 +4,30 @@
   status = 301
 
 [[redirects]]
+  from = "/utilities/web.syntaxhighlighters.prism"
+  to = "/utilities/web.syntaxhighlighters.prism/index"
+  status = 301
+
+[[redirects]]
   from = "/utilities/javascript.nodejs/*"
   to = "https://jering-javascript-nodejs.netlify.com/:splat"
   status = 200
-  
+
+[[redirects]]
+  from = "/utilities/web.syntaxhighlighters.highlightjs"
+  to = "/utilities/web.syntaxhighlighters.highlightjs/index"
+  status = 301
+
+[[redirects]]
+  from = "/utilities/web.syntaxhighlighters.highlightjs/*"
+  to = "https://jering-web-syntaxhighlighters-highlightjs.netlify.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/utilities/web.syntaxhighlighters.prism/*"
+  to = "https://jering-web-syntaxhighlighters-prism.netlify.com/:splat"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
