@@ -28,6 +28,16 @@
   to = "https://jering-web-syntaxhighlighters-prism.netlify.com/:splat"
   status = 200
 
+[[redirects]]
+  from = "/utilities/jering.markdig.extensions.flexiblocks"
+  to = "/utilities/jering.markdig.extensions.flexiblocks/index"
+  status = 301
+
+[[redirects]]
+  from = "/utilities/jering.markdig.extensions.flexiblocks/*"
+  to = "https://jering-markdig-extensions-flexiblocks.netlify.com/:splat"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
