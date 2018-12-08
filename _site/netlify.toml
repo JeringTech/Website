@@ -38,6 +38,16 @@
   to = "https://jering-markdig-extensions-flexiblocks.netlify.com/:splat"
   status = 200
 
+[[redirects]]
+  from = "/utilities/jering.devops.azurepipelines"
+  to = "/utilities/jering.devops.azurepipelines/index"
+  status = 301
+
+[[redirects]]
+  from = "/utilities/jering.devops.azurepipelines/*"
+  to = "https://jering-devops-azurepipelines.netlify.com/:splat"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
