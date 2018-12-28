@@ -1,0 +1,11 @@
+@import '../../../node_modules/mimo-website/dist/styles/shared/constants';
+
+#guides {
+    article {
+        .content {
+            h2 {
+                margin-top: 0;
+            }
+        }
+    }
+}

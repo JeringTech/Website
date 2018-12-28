@@ -1,0 +1,76 @@
+@import '../../../node_modules/mimo-website/dist/styles/shared/constants';
+
+#guides, #products, #utilities {
+    #core {
+        border-top: none;
+        padding: 0;
+
+        main {
+            padding: 0;
+
+            article {
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+
+                * {
+                    max-width: initial; // Not relevant for pages without long form text
+                }
+
+                > h1.title {
+                    display: none;
+                }
+
+                #banner {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 0;
+                    padding: 46px 0;
+                    background-color: #FE3D00; // TODO move color to constants
+                    @include horizontal-edge-padding;
+
+                    div {
+                        display: flex;
+                        position: absolute;
+                        justify-content: center;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+
+                        svg {
+                            width: 140px;
+                            fill: $color-primary;
+                            opacity: 0.2;
+                        }
+                    }
+
+                    h1 {
+                        margin-top: 0px;
+                        color: $color-secondary-text;
+                        text-align: center;
+                    }
+
+                    p {
+                        margin-top: 14px;
+                        color: $color-secondary-text;
+                        text-align: center;
+                    }
+                }
+
+                .content {
+                    @include horizontal-edge-margin;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 59px;
+
+                    .card-set {
+                        max-width: 1200px;
+                    }
+                }
+            }
+        }
+    }
+}

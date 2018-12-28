@@ -1,0 +1,10 @@
+- name: Products
+  href: products
+- name: Utilities
+  href: utilities
+- name: Guides
+  href: guides
+- name: Articles
+  href: articles
+- name: About
+  href: about

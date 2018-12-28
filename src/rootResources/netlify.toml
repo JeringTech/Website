@@ -1,0 +1,54 @@
+[[redirects]]
+  from = "/utilities/jering.javascript.nodejs"
+  to = "/utilities/jering.javascript.nodejs/index"
+  status = 301
+
+[[redirects]]
+  from = "/utilities/jering.javascript.nodejs/*"
+  to = "https://jering-javascript-nodejs.netlify.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/utilities/jering.web.syntaxhighlighters.highlightjs"
+  to = "/utilities/jering.web.syntaxhighlighters.highlightjs/index"
+  status = 301
+
+[[redirects]]
+  from = "/utilities/jering.web.syntaxhighlighters.highlightjs/*"
+  to = "https://jering-web-syntaxhighlighters-highlightjs.netlify.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/utilities/jering.web.syntaxhighlighters.prism"
+  to = "/utilities/jering.web.syntaxhighlighters.prism/index"
+  status = 301
+
+[[redirects]]
+  from = "/utilities/jering.web.syntaxhighlighters.prism/*"
+  to = "https://jering-web-syntaxhighlighters-prism.netlify.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/utilities/jering.markdig.extensions.flexiblocks"
+  to = "/utilities/jering.markdig.extensions.flexiblocks/index"
+  status = 301
+
+[[redirects]]
+  from = "/utilities/jering.markdig.extensions.flexiblocks/*"
+  to = "https://jering-markdig-extensions-flexiblocks.netlify.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/utilities/jering.devops.azurepipelines"
+  to = "/utilities/jering.devops.azurepipelines/index"
+  status = 301
+
+[[redirects]]
+  from = "/utilities/jering.devops.azurepipelines/*"
+  to = "https://jering-devops-azurepipelines.netlify.com/:splat"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"

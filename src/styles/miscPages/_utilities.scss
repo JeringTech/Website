@@ -1,0 +1,17 @@
+@import '../../../node_modules/mimo-website/dist/styles/shared/constants';
+
+#utilities {
+    #core {
+        main {
+            article {
+                .content {
+                    .card-set {
+                        h3{
+                            font-size: $font-size-4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

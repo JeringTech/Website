@@ -1,0 +1,10 @@
+- name: Articles
+  href: ../articles
+- name: DevOps
+  items: 
+  - name: The Semantic Versioning Lifecycle
+    href: the-semantic-versioning-lifecycle
+- name: WebDev
+  items: 
+  - name: CSS Only Responsive Tables
+    href: css-only-responsive-tables

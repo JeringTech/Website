@@ -1,0 +1,30 @@
+@import '../../../node_modules/mimo-website/dist/styles/shared/constants';
+
+#the-semantic-versioning-lifecycle {
+    /* 
+        We break up long inline code strings in table cells to avoid tables scrolling unecessarily.
+        Each segment needs its padding tweaked. A general pure-css solution is impossible since there 
+        is no "lookahead" in CSS, i.e we can't select code elements that are followed by <wbr> elements.
+        If this issue turns out to be quite common, consider a FlexiCodeInlines extension breaks up long
+        strings and assigns classes to segments for padding.
+    */
+    #terminology {
+        .flexi-table-block {
+            tr:nth-child(5) {
+                td:nth-child(2) {
+                    span {
+                        code {
+                            &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(8) {
+                                padding-right: 0;
+                            }
+
+                            &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(9) {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
