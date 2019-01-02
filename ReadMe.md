@@ -13,12 +13,12 @@ This is the repository for www.jering.tech. The site consists of:
 ## Structure
 
 ### Utility/Guide/Product Websites
-Each utility/product website must be published to \<project name>.netlify.com. A corresponding redirect from www.jering.tech/\<utilities|guides|products>/\<project name> to each \<project name>.netlify.com site must be added to this project's netlify.toml.
+Each utility/product website must be published to &lt;project name&gt;.netlify.com. A corresponding redirect from www.jering.tech/<utilities|guides|products>/<project name&gt; to each &lt;project name&gt;.netlify.com site must be added to this project's netlify.toml.
 
 ### Sitemaps
-This project contains a robots.txt (hosted at www.jering.tech/robots.txt) with multiple sitemap references. This method is described [here](https://www.sitemaps.org/protocol.html#submit_robots).  
+This project contains a robots.txt (hosted at www.jering.tech/robots.txt) that points to a [sitemap index file](https://www.sitemaps.org/protocol.html#index) with multiple sitemap references.  
 
-One reference points to the sitemap that maps out this project's pages. The other references point to sitemaps generated for utility/guide/product websites (\<project name>.netlify.com/sitemap.xml). This method is 
+One reference points to the sitemap that maps out this project's pages. The other references point to sitemaps generated for utility/guide/product websites (&lt;project name&gt;.netlify.com/sitemap.xml). This method is 
 described [here](https://www.sitemaps.org/protocol.html#location).
 
 ## Logos
