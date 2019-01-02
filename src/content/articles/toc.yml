@@ -6,5 +6,5 @@
     href: the-semantic-versioning-lifecycle
 - name: WebDev
   items: 
-  - name: CSS Only Responsive Tables
-    href: css-only-responsive-tables
+  - name: Card-Style CSS-Only Responsive Tables
+    href: card-style-css-only-responsive-tables

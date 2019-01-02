@@ -133,10 +133,7 @@ A piece of software is in this phase just after conception; architectural plans 
 Semver suggests beginning this phase with the version number `0.1.0`. During this phase, each subsequent version number should only have its minor version incremented, regardless
 of whether or not changes are backward compatible. For example, at the end of this phase, the simplified changelog of a piece of software might look like this:
 
-+{ 
-    "sourceUri": "./the-semantic-versioning-lifecycle.md",
-    "clippings": [{"region": "initial-development-phase"}]
-}
++{ "clippings": [{"region": "initial-development-phase"}] }
 
 ! Patch version can be incremented in this phase, however, semver [recommends](https://semver.org/#how-should-i-deal-with-revisions-in-the-0yz-initial-development-phase) only incrementing minor version for simplicity's 
 ! sake.
@@ -174,7 +171,6 @@ for example, `1.0.0-alpha.1`. Each subsequent version number should only have it
 the simplified changelog of a piece of software might look like this:
 
 +{ 
-    "sourceUri": "./the-semantic-versioning-lifecycle.md",
     "clippings": [{"region": "pre-release-phase-1", "afterContent": ""}, 
         {"region": "initial-development-phase"}]
 }
@@ -230,7 +226,6 @@ In short, if a version:
 At the end of a maintenance phase, the simplified changelog of a piece of software might look like this:
 
 +{ 
-    "sourceUri": "./the-semantic-versioning-lifecycle.md",
     "clippings": [{"region": "maintenance-phase", "afterContent": ""}, 
         {"region": "pre-release-phase-1", "afterContent": ""}, 
         {"region": "initial-development-phase"}]
@@ -250,7 +245,6 @@ At some point in a maintenance phase, the need for a rewrite might arise. A rewr
 of software might look like this:
 
 +{ 
-    "sourceUri": "./the-semantic-versioning-lifecycle.md",
     "clippings": [{"region": "pre-release-phase-2", "afterContent": ""},
         {"region": "maintenance-phase", "afterContent": ""},
         {"region": "pre-release-phase-1", "afterContent": ""},

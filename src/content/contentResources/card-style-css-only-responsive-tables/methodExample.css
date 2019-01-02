@@ -1,0 +1,61 @@
+/* Styles for card mode (presentational styles are marked as optional) */
+@media (max-width: 855px) {
+    table {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody {
+        display: table;
+    }
+
+    tr {
+        display: table-row-group;
+    }
+
+        tr:nth-child(odd) {
+            background-color: #f9f9f9; /* optional */
+        }
+
+    td {
+        display: table-row;
+    }
+
+        td:before,
+        td > span {
+            display: table-cell;
+            padding: 7px 13px; /* optional */
+            border: 1px solid #e8e8e8; /* optional */
+        }
+
+        td:before {
+            content: attr(data-label);
+            font-weight: 600; /* optional */
+        }
+
+        td:not(.align-start) > span {
+            vertical-align: middle; /* optional */
+        }
+}
+
+/* Styles for normal mode (all are optional, presentational styles) */
+@media (min-width: 856px) {
+    th {
+        white-space: nowrap;
+        font-weight: 600;
+    }
+
+    th, 
+    td {
+        padding: 7px 13px;
+        border: 1px solid #e8e8e8;
+    }
+
+        th:not(.align-start), 
+        td:not(.align-start) {
+            text-align: center;
+        }
+}

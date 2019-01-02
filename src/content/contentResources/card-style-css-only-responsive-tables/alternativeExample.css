@@ -1,0 +1,63 @@
+/* Styles for card mode (presentational styles are marked as optional) */
+@media (max-width: 855px) {
+    table,
+    tbody,
+    tr,
+    td {
+        display: block;
+    }
+
+    table {
+        border-top: 1px solid #e8e8e8; /* optional */
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #f9f9f9; /* optional */
+    }
+
+    td {
+        position: relative;
+        text-align: left;
+        padding: 7px 13px; /* optional */
+        padding-left: calc(50% + 13px); /* 50% is arbitrary, 13px is optional */
+        border: 1px solid #e8e8e8; /* optional */
+        border-top: none; /* optional */
+    }
+
+        td:before {
+            content: attr(data-label);
+            position: absolute;
+            white-space: nowrap;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 50%; /* arbitrary */
+            text-align: left;
+            padding: 7px 13px; /* optional */
+            font-weight: 600; /* optional */
+            border-right: 1px solid #e8e8e8; /* optional */
+        }
+}
+
+/* Styles for normal mode (all are optional, presentational styles) */
+@media (min-width: 856px) {
+    th {
+        white-space: nowrap;
+        font-weight: 600;
+    }
+
+    th,
+    td {
+        padding: 7px 13px;
+        border: 1px solid #e8e8e8;
+    }
+
+        th:not(.align-start),
+        td:not(.align-start) {
+            text-align: center;
+        }
+}
