@@ -1,9 +1,16 @@
 trigger:
 - master
 
+resources:
+  repositories:
+  - repository: templates
+    type: github
+    name: JeringTech/DevOps.AzurePipelines
+    endpoint: JeringTech
+
 jobs:
-- template: templates/docs/main.yml
+- template: templates/docs/main.yml@templates
   parameters:
     srcDir: "."
     nugetRestoreEndpoints: "https://pkgs.dev.azure.com/JeremyTCD/_packaging/Main/nuget/v2"
-    nugetRestorePats: "$(nugetRestorePat)"
+    nugetRestorePats: "$(nugetRestorePats)"
