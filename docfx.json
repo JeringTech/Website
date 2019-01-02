@@ -76,7 +76,7 @@
                 "**/src/content/index.md": {
                     "priority": 1.0
                 },
-                "**/src/content/tutorials/**/*.md": {
+                "**/src/content/articles/**/*.md": {
                     "priority": 1.0
                 }
             }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <sitemap>
+        <loc>https://www.jering.tech/sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://www.jering.tech/utilities/jering.devops.azurepipelines/sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://www.jering.tech/utilities/jering.markdig.extensions.flexiblocks/sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://www.jering.tech/utilities/jering.javascript.nodejs/sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://www.jering.tech/utilities/jering.web.syntaxhighlighters.highlightjs/sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://www.jering.tech/utilities/jering.web.syntaxhighlighters.prism/sitemap.xml</loc>
+    </sitemap>
+
+</sitemapindex>
