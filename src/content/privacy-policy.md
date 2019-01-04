@@ -12,5 +12,5 @@ mimo_unneededFontPreloads:
   - /resources/ibm-plex-mono-v3-latin-regular.woff2
 ---
 
-This website does not collect personal information. Also, it does not directly use cookies. It does utilize Google Analytics to monitor traffic and usage patterns so as to provide the best experience possible.
+This website does not collect personal information. Also, it does not make direct use of cookies. It does utilize Google Analytics to monitor traffic and usage patterns so as to provide the best experience possible.
 Google Analytics has separate and independent policies.
