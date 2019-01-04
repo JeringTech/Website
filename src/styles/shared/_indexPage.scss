@@ -1,4 +1,5 @@
 @import '../../../node_modules/mimo-website/dist/styles/shared/constants';
+@import '../shared/constants';
 
 #guides, #products, #utilities {
     #core {
@@ -28,7 +29,7 @@
                     flex-direction: column;
                     margin-top: 0;
                     padding: 46px 0;
-                    background-color: #FE3D00; // TODO move color to constants
+                    background-color: $color-jering;
                     @include horizontal-edge-padding;
 
                     div {
