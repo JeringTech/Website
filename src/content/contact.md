@@ -7,6 +7,8 @@ mimo_includeInSearchIndex: false
 mimo_disableEditArticle: true
 mimo_disableMetadata: true
 mimo_disableCategoryMenu: true
+mimo_unneededFontPreloads:
+  - /resources/ibm-plex-mono-v3-latin-regular.woff2
 ---
 
 ## Article and Site Functionality Issues
