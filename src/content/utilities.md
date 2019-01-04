@@ -30,7 +30,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#custom-logo-psgallery" />
             </svg>
         </div>
-        <a href="https://www.jering.tech/utilities/jering.devops.azurepipelines/index" class="card-body no-animated-underline">
+        <a href="https://www.jering.tech/utilities/jering.devops.azurepipelines/index" class="card-body">
             <header>
                 <h3>Jering.<br>DevOps.<br>AzurePipelines</h3>
             </header>
@@ -44,7 +44,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#custom-logo-nuget" />
             </svg>
         </div>
-        <a href="https://www.jering.tech/utilities/jering.markdig.extensions.flexiblocks/index" class="card-body no-animated-underline">
+        <a href="https://www.jering.tech/utilities/jering.markdig.extensions.flexiblocks/index" class="card-body">
             <header>
                 <h3>Jering.<br>Markdig.<br>Extensions.<br>FlexiBlocks</h3>
             </header>
@@ -58,7 +58,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#custom-logo-nuget" />
             </svg>
         </div>
-        <a href="https://www.jering.tech/utilities/jering.javascript.nodejs/index" class="card-body no-animated-underline">
+        <a href="https://www.jering.tech/utilities/jering.javascript.nodejs/index" class="card-body">
             <header>
                 <h3>Jering.<br>Javascript.<br>NodeJS</h3>
             </header>
@@ -72,7 +72,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#custom-logo-nuget" />
             </svg>
         </div>
-        <a href="https://www.jering.tech/utilities/jering.web.syntaxhighlighters.highlightjs/index" class="card-body no-animated-underline">
+        <a href="https://www.jering.tech/utilities/jering.web.syntaxhighlighters.highlightjs/index" class="card-body">
             <header>
                 <h3>Jering.<br>Web.<br>SyntaxHighlighters.<br>HighlightJS</h3>
             </header>
@@ -86,7 +86,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#custom-logo-nuget" />
             </svg>
         </div>
-        <a href="https://www.jering.tech/utilities/jering.web.syntaxhighlighters.prism/index" class="card-body no-animated-underline">
+        <a href="https://www.jering.tech/utilities/jering.web.syntaxhighlighters.prism/index" class="card-body">
             <header>
                 <h3>Jering.<br>Web.<br>SyntaxHighlighters.<br>HighlightJS</h3>
             </header>

@@ -38,7 +38,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#custom-cube" />
             </svg>
         </div>
-        <a href="/products" class="card-body no-animated-underline">
+        <a href="/products" class="card-body">
             <header>
                 <h3>Products</h3>
             </header>
@@ -52,7 +52,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#material-design-build" />
             </svg>
         </div>
-        <a href="/utilities" class="card-body no-animated-underline">
+        <a href="/utilities" class="card-body">
             <header>
                 <h3>Utilities</h3>
             </header>
@@ -66,7 +66,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#material-design-library-books" />
             </svg>
         </div>
-        <a href="/guides" class="card-body no-animated-underline">
+        <a href="/guides" class="card-body">
             <header>
                 <h3>Guides</h3>
             </header>
@@ -80,7 +80,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#material-design-description" />
             </svg>
         </div>
-        <a href="/articles" class="card-body no-animated-underline">
+        <a href="/articles" class="card-body">
             <header>
                 <h3>Articles</h3>
             </header>
@@ -94,7 +94,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#material-design-info" />
             </svg>
         </div>
-        <a href="/about" class="card-body no-animated-underline">
+        <a href="/about" class="card-body">
             <header>
                 <h3>About</h3>
             </header>
@@ -108,7 +108,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#ion-icons-logo-github" />
             </svg>
         </div>
-        <a href="https://github.com/JeringTech" class="card-body no-animated-underline">
+        <a href="https://github.com/JeringTech" class="card-body">
             <header>
                 <h3>Github</h3>
             </header>
@@ -122,7 +122,7 @@ mimo_unneededFontPreloads:
                 <use xlink:href="#custom-logo-nuget" />
             </svg>
         </div>
-        <a href="https://www.nuget.org/profiles/Jering" class="card-body no-animated-underline">
+        <a href="https://www.nuget.org/profiles/Jering" class="card-body">
             <header>
                 <h3>Nuget</h3>
             </header>
@@ -141,12 +141,12 @@ mimo_unneededFontPreloads:
                 <h3>Connect</h3>
             </header>
             <div class="card-content">
-                <a class="twitter-link no-animated-underline" href="https://twitter.com/JeringTech">
+                <a class="twitter-link" href="https://twitter.com/JeringTech">
                     <svg>
                         <use xlink:href="#ion-icons-logo-twitter" />
                     </svg>
                 </a>
-                <a class="github-link no-animated-underline" href="https://www.linkedin.com/company/jering/about/">
+                <a class="github-link" href="https://www.linkedin.com/company/jering/about/">
                     <svg>
                         <use xlink:href="#ion-icons-logo-linkedin" />
                     </svg>
