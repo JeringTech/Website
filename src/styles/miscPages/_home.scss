@@ -84,13 +84,16 @@
 
                         #card-connect {
                             .card-content {
-                                display: flex;
-                                align-items: flex-start;
+                                display: grid;
+                                grid-template-columns: repeat(auto-fit, 32px);
+                                justify-content: flex-start;
+                                grid-column-gap: 14px;
+                                grid-row-gap: 14px;
                                 overflow: visible;
 
                                 a {
+                                    display: flex;
                                     will-change: transform; // Place icons in separate layers so that when they transform, the rest of the card doesn't get repainted (causes header and footer to get blurry)
-                                    margin-right: 14px;
                                     transition: transform $short-animation-duration $ease-out-quad;
 
                                     &:last-child {
