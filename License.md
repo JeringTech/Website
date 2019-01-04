@@ -1,5 +1,5 @@
 ﻿# Licenses
-Jering.Website, copyright © 2018 Jering. All rights reserved.
+Jering.Website, copyright © 2018-2019 Jering. All rights reserved.
 
 ## Source Code and Article Code-Examples
 Source code and article code-examples are licensed under the following license:
