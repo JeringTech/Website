@@ -1,5 +1,5 @@
 # Jering.Website
-[![Build Status](https://dev.azure.com/JeringTech/Website/_apis/build/status/JeringTech.Website?branchName=master)](https://dev.azure.com/JeringTech/Website/_build/latest?definitionId=7?branchName=master)
+[![Build Status](https://dev.azure.com/JeringTech/Website/_apis/build/status/Jering.Website-CI?branchName=master)](https://dev.azure.com/JeringTech/Website/_build/latest?definitionId=7?branchName=master)
 
 This is the repository for www.jering.tech. The site consists of:
 - A home page.
