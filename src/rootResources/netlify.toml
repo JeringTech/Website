@@ -52,3 +52,8 @@
   for = "/*"
   [headers.values]
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+[[headers]]
+  for = "/resources/*"
+  [headers.values]
+    Cache-Control = "private, max-age=31536000"
