@@ -1,5 +1,5 @@
 ---
-mimo_pageDescription: Home page of www.jering.tech.
+mimo_pageDescription: Jering is a software company based in Singapore. Here at Jering, we aim to build bold and innovative solutions.
 mimo_pageTitle: Home
 mimo_pageID: home
 mimo_isDisplay: true

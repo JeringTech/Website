@@ -1,5 +1,5 @@
 ---
-mimo_pageDescription: This article focuses on the use of semantic versioning (semver) in practice; it journeys through a software development lifecycle, providing examples of how semver should be used in each phase - this article describes the semantic versioning lifecycle.
+mimo_pageDescription: Semantic versioning has become the de-facto versioning method for software packages. In this article, we journey through the semantic versioning lifecycle of a hypothetical package. In the process, we explain how semantic versioning works in practice and why it is useful.
 mimo_pageTitle: The Semantic Versioning Lifecycle
 mimo_pageID: the-semantic-versioning-lifecycle
 mimo_date: Mar 3, 2018

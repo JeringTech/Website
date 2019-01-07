@@ -1,5 +1,5 @@
 ---
-mimo_pageDescription: This article describes a method for creating card-style responsive tables using only CSS.
+mimo_pageDescription: CSS-only responsive tables are tricky. In this article, we share Jering's solution - card-style CSS-only responsive tables. These tables require minimal setup, can display generated data, and are functional in viewports of all sizes.
 mimo_pageTitle: Card-Style CSS-Only Responsive Tables
 mimo_pageID: card-style-css-only-responsive-tables
 mimo_date: Apr 27, 2018
