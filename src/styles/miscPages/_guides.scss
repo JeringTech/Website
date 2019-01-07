@@ -1,6 +1,8 @@
 @import '../../../node_modules/mimo-website/dist/styles/shared/constants';
 
 #guides {
+    @include display-page;
+
     article {
         .content {
             h2 {

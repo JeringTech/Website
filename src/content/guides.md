@@ -2,16 +2,10 @@
 mimo_pageDescription: An index of guides by Jering.
 mimo_pageTitle: Guides
 mimo_pageID: guides
-mimo_includeInSal: false
-mimo_disableEditArticle: true
-mimo_disableMetadata: true
-mimo_disableCategoryMenu: true
-mimo_disableArticleMenu: true
-mimo_unneededFontPreloads:
-  - /resources/ibm-plex-mono-v3-latin-regular.woff2
+mimo_isSearchableDisplay: true
 ---
 
-<div id="banner">
+<div class="banner-small">
     <div class="banner-background">
         <svg>
             <use xlink:href="#material-design-library-books" />

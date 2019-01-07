@@ -2,14 +2,7 @@
 mimo_pageDescription: About Jering.
 mimo_pageTitle: About
 mimo_pageID: about
-mimo_includeInSal: false
-mimo_includeInSearchIndex: false
-mimo_disableEditArticle: true
-mimo_disableMetadata: true
-mimo_disableCategoryMenu: true
-mimo_disableArticleMenu: true
-mimo_unneededFontPreloads:
-  - /resources/ibm-plex-mono-v3-latin-regular.woff2
+mimo_isDisplay: true
 ---
 
 Jering is an open-core software company founded in 2018 and based in Singapore.  

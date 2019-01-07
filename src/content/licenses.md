@@ -2,13 +2,7 @@
 mimo_pageDescription: Licenses for www.jering.tech.
 mimo_pageTitle: Licenses
 mimo_pageID: licenses
-mimo_includeInSal: false
-mimo_includeInSearchIndex: false
-mimo_disableEditArticle: true
-mimo_disableMetadata: true
-mimo_disableCategoryMenu: true
-mimo_unneededFontPreloads:
-  - /resources/ibm-plex-mono-v3-latin-regular.woff2
+mimo_isTextAndArticleMenu: true
 ---
 
 www.jering.tech, copyright © 2018-2019 Jering. All rights reserved.
