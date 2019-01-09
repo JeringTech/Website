@@ -82,7 +82,7 @@ mimo_isSearchableDisplay: true
         </div>
         <a href="https://www.jering.tech/utilities/jering.web.syntaxhighlighters.prism/index" class="card-body">
             <header>
-                <h3>Jering.<br>Web.<br>SyntaxHighlighters.<br>HighlightJS</h3>
+                <h3>Jering.<br>Web.<br>SyntaxHighlighters.<br>Prism</h3>
             </header>
             <span class="card-content">Use the Syntax Highlighter, Prism, from C#</span>
             <footer>A NuGet package</footer>
