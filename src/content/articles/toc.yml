@@ -2,8 +2,8 @@
   href: ../articles
 - name: DevOps
   items: 
-  - name: The Semantic Versioning Lifecycle
-    href: the-semantic-versioning-lifecycle
+  - name: Semantic Versioning in Practice
+    href: semantic-versioning-in-practice
 - name: WebDev
   items: 
   - name: Card-Style CSS-Only Responsive Tables

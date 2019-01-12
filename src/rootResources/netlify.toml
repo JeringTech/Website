@@ -48,6 +48,11 @@
   to = "https://jering-devops-azurepipelines.netlify.com/:splat"
   status = 200
 
+[[redirects]]
+  from = "/articles/the-semantic-versioning-lifecycle"
+  to = "/articles/semantic-versioning-in-practice"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
