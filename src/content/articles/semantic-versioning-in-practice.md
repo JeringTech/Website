@@ -94,7 +94,7 @@ mimo_additionalFontPreloads:
 #endregion
 -->
 
-A good grasp of [semantic versioning](https://semver.org/) (semver) is a must for software developers. In this article, we explain in simple terms, everything you need to
+A good grasp of [semantic versioning](https://semver.org/) (semver) is a must for software developers. In this article, we explain in simple terms, everything you need to 
 know to use semver effectively. Also, we provide insights into our use of semver here at Jering.
 
 ## Terminology
@@ -112,15 +112,15 @@ A piece of software's *private code* is the part of its code it doesn't publical
 ### Version 
 A *version* is a snapshot of a piece of software.
 ### Backward Compatible 
-The phrase *backward compatible* describes [version](#version)s. A version can be *backward compatible* with an earlier version. This is when its [public API](#public-api) is **equal to**
+The phrase *backward compatible* describes [version](#version)s. A version can be *backward compatible* with an earlier version. This is when its [public API](#public-api) is **equal to** 
 or a **super-set** of the earlier version's public API. In short, a version is *backward compatible* with an earlier version if it can substitute for it. 
 A version that:
-- only adds public API features is *backward compatible* with its preceding version
-- removes and/or changes public API features isn't *backward compatible* with its preceding version
+- **only adds** public API features **is** *backward compatible* with its preceding version
+- **removes and/or changes** public API features **isn't** *backward compatible* with its preceding version
   
 ### Version Number 
 A *version number* is an identifier for a [version](#version). *Version numbers* are strings of the form `major.minor.patch[-pre_release_identifiers][+build_metadata]`. 
-`major`, `minor` and `patch` are non-negative integers. `pre_release_identifiers` and `build_metadata` are series of dot-separated strings.
+`major`, `minor` and `patch` are non-negative integers. `pre_release_identifiers` and `build_metadata` are series of dot-separated strings. 
 Each string can only contain characters in the regex character set `[0-9A-Za-z\-]`.
 
 ### Patch Version 
@@ -135,10 +135,10 @@ A *release* is a production-ready [version](#version).
 A *pre-release* is a non-production-ready [version](#version) that closely precedes a [release](#release).
 
 ## What Software Can Semver Version?
-Using semver to version the wrong software is an all too common source of frustration.
-Semver **[can't version](https://semver.org/#spec-item-1)** software that doesn't declare a [public API](#public-api). 
+Using semver to version the wrong software is an all too common source of frustration. 
+**Semver [can't version](https://semver.org/#spec-item-1) software that don't declare a [public API](#public-api)**. 
 
-Software **that declare** a public API include libraries
+Software **that declare** a public API include libraries 
 and command line applications. Software **that don't declare** a public API include many games and websites. 
 Consider a blog; unlike a library, it has no public API. It isn't programmatically accessible to other pieces of software. As such, [version](#version)s of a blog can't be 
 [backward compatible](#backward-compatible) or incompatible. As we'll explain, semver [version number](#version-number)s [depend on backward compatibility](#rules-2). 
@@ -150,14 +150,14 @@ Now we've explained the basics, let's move on to the use of semver. Semver has 3
 development phase.
 
 ### Description
-A piece of software is in this phase just after conception.
+A piece of software is in this phase just after conception. 
 Significant changes to its [public API](#public-api) are likely and it might be unstable. 
-It is a long way from production-ready.
+It's a long way from production-ready.
 
 ### Semver in this Phase
 #### Rules
-The first [version number](#version-number) in this phase must be `0.1.0`. Only increment [minor version](#minor-version) for each subsequent version number. Do this regardless of whether changes 
-are [backward compatible](#backward-compatible). At the end of this phase, the [version](#version) history of a piece of software might look like this:
+The first [version number](#version-number) in this phase must be `0.1.0`. Only increment [minor version](#minor-version) for subsequent version numbers. Do this regardless of whether changes 
+are [backward compatible](#backward-compatible). At the end of this phase, the [version](#version) history of a piece of software looks like this:
 
 @{
     "highlightLineRanges": [{"startLineNumber": 1, "endLineNumber": 1}, 
@@ -171,7 +171,7 @@ are [backward compatible](#backward-compatible). At the end of this phase, the [
 
 #### Rationale
 - Keeping [major version](#major-version) at 0 lets consumers know software is a long way from production-ready.
-- Incrementing only minor version is simple, and so, convenient for quick iterations. Also, doing so does not compromise on an ordered history.
+- Incrementing only minor version is simple, and so convenient for quick iterations. Also, doing so does not compromise on an ordered history.
 
 ## [Pre-Release Phase](https://semver.org/#spec-item-9)
 
@@ -180,18 +180,19 @@ A piece of software is in this phase when it's working toward a [release](#relea
 Changes to its [public API](#public-api) are likely and it might be unstable. It isn't production-ready. 
 [Version](#version)s in this phase are [pre-release](#pre-release)s.  
 
+You might have noticed overlap between this and the initial development phases. We'll [examine](#notes) this issue later.
+
 ! This phase can occur after the [initial development phase](#initial-development-phase) or a [maintenance phase](#maintenance-phase). After the 
-! initial development phase, a piece of software would work toward the `1.0.0` release. After a maintenance phase, it could 
+! initial development phase, a piece of software works toward the `1.0.0` release. After a maintenance phase, it could 
 ! work toward any release. E.g., `2.0.0`, `3.2.0`, or `4.5.1`.
 
-You might have noticed overlap between this and the initial development phases. We'll [examine](#notes) this issue later. 
 
 ### Semver in this Phase
 #### Rules
-[Version number](#version-number)s in this phase begin with the version number of the release being worked toward. Append a `-` followed by dot-separated pre-release 
-identifiers to each version number. E.g., `1.0.0-alpha.1` or `1.0.0-beta.2`. 
-During this phase, only increment pre-release identifiers for each subsequent version number. Do this regardless of whether changes are [backward compatible](#backward-compatible). 
-At the end of this phase, the version history of a piece of software might look like this:
+[Version number](#version-number)s in this phase **begin** with the version number of the release being worked toward. 
+They **end** with a `-` followed by dot-separated pre-release identifiers. E.g., `1.0.0-alpha.1` or `1.0.0-beta.2`. 
+During this phase, only increment pre-release identifiers for subsequent version numbers. Do this regardless of whether changes are [backward compatible](#backward-compatible). 
+At the end of this phase, the version history of a piece of software looks like this:
 
 @{
     "highlightLineRanges": [{"startLineNumber": 1, "endLineNumber": 1}, 
@@ -206,45 +207,45 @@ At the end of this phase, the version history of a piece of software might look 
 }
 
 #### Rationale
-- Appending pre-release identifiers lets consumers know software isn't production-ready.
+- Appending pre-release identifiers lets consumers know software isn't production-ready. 
 Also, it lets consumers know software has attained some stability (relative to the initial development phase).
-- Incrementing only pre-release identifiers is simple, and so, convenient for quick iterations. Also, doing so does not compromise on an ordered history.
+- Incrementing only pre-release identifiers is simple, and so convenient for quick iterations. Also, doing so does not compromise on an ordered history.
 
 ### Notes
-Semver's definition of this phase has ambiguities. For one, this phase isn't well-demarcated from the initial development phase. After all, in the initial development phase,
+Semver's definition of this phase has ambiguities. For one, this phase isn't well-demarcated from the initial development phase. After all, in the initial development phase, 
 software is technically working toward a release. Also, this phase's sub-phases (alpha, beta, release candidate) aren't defined.
 
 The lack of standardization has caused trouble. In [Angular 2+](https://angular.io/)'s 
-early days, release candidate versions received many breaking changes. This caused a [backlash](https://www.reddit.com/r/Angular2/comments/4x23ae/eli5_why_are_new_featuresmajor_changes_being/)
+early days, release candidate versions received many breaking changes. This caused a [backlash](https://www.reddit.com/r/Angular2/comments/4x23ae/eli5_why_are_new_featuresmajor_changes_being/) 
 from developers expecting stable public APIs.  
 
 It's a good idea to **define** and **articulate** initial development/pre-release phase rules. 
 Here at Jering, these are ours:  
 
 We demarcate the initial development and pre-release phases using the following marker:
-- A piece of our software is in the pre-release phase once we lock its features. Apart from being a marker, we find that locking features
-helps us complete projects.
+- A piece of our software is in the pre-release phase once we **fix the set of features (lock features) for its upcoming release**. 
+Apart from being a marker, we find that locking features helps us complete projects.
 
 We use the following definitions for this phase's sub-phases. A piece of our software is in the:
-- Alpha sub-phase while its features are incomplete and its architecture hasn't stabilized.
-- Beta sub-phase when it's past alpha, but still needs rigorous testing and optimizing.
+- Alpha sub-phase while its **features are incomplete** and its **architecture hasn't stabilized**.
+- Beta sub-phase when it's past alpha, but still **needs rigorous testing and optimizing**.
 
 We do not use the release candidate pre-release phase.  
 
-Software development can be hard to predict. As a result, it isn't always possible to stick to these rules. Nonetheless, they help
+Software development can be hard to predict. As a result, it isn't always possible to stick to these rules. Nonetheless, they help 
 set expectations for consumers of our software.
 
 ## Maintenance Phase
 
 ### Description
-A piece of software is in this phase when it's production-ready. It likely has consumers in production, so [backward compatibility](#backward-compatible)
+A piece of software is in this phase when it's production-ready. It likely has consumers in production, so [backward compatibility](#backward-compatible) 
 matters. [Version](#version)s in this phase are [release](#release)s. 
 
 ### Semver in this Phase
 #### Rules
-Semver specifies that [version number](#version-number)s in this phase should be of the form `major.minor.patch`, with `major` larger than 0. E.g., `1.0.0` or `6.7.2`. During this phase, increment version numbers according to the following rules:
-- If a version adds only backward compatible bug fixes, increment [patch version](#patch-version).
-- If a version adds only backward compatible changes and at least one of them isn't a bug fix, increment [minor version](#minor-version) and set patch version to 0.
+Semver specifies that [version number](#version-number)s in this phase should be of the form `major.minor.patch`. `major` must be larger than 0. E.g., `1.0.0` or `6.7.2`. During this phase, increment version numbers according to the following rules:
+- If a version adds only backward compatible **bug fixes**, increment [patch version](#patch-version).
+- If a version adds only backward compatible **changes** and at least one of them **isn't a bug fix**, increment [minor version](#minor-version) and set patch version to 0.
 - If a version makes **any** backward incompatible changes, increment [major version](#major-version) and set both minor and patch version to 0.
 
 In short, if a version:
@@ -255,7 +256,7 @@ In short, if a version:
 | true | false | Increment minor version, set patch version to 0. |
 | false | true/false | Increment major version, set minor version and patch version to 0. |
 
-At the end of this phase, the version history of a piece of software might look like this:
+At the end of this phase, the version history of a piece of software looks like this:
 
 @{
     "highlightLineRanges": [{"startLineNumber": 1, "endLineNumber": 1}, 
@@ -278,7 +279,7 @@ This, in turn, makes it easy for them to update software to the latest version t
 
   Before semver, developers used all sorts of versioning systems. There was no simple, standard way to tell whether versions were backward compatible. This made updating dependencies dangerous. 
 Semver mitigates that danger. Some argue that semver isn't useful because not everyone follows its rules. Consider traffic rules; delinquents flout them, sometimes 
-with tragic consequences. But most still abide by them because doing so keeps us all safer. Likewise, following semver's rules keeps us all safer,
+with tragic consequences. But most still abide by them because they keep us all safer. Likewise, following semver's rules keeps us all safer, 
 regardless of what others do.
 - Minor and patch version rules give consumers granular control. Some consumers find the extra control useful.
 
@@ -287,20 +288,20 @@ regardless of what others do.
 #### Excessive Major Version Increments
 Developers often associate major version increments with significant changes and rewrites. Incrementing major version for small changes might seem odd. 
 What's more, doing so could cause major version to balloon. Version numbers like `42.0.0` might occur. That said, incrementing major version for every backward incompatible 
-change is critical. Not doing so could break consumers in production.
+change is **critical**. Not doing so could **break consumers in production**.
 
-Semver's [FAQ](https://semver.org/#if-even-the-tiniest-backwards-incompatible-changes-to-the-public-api-require-a-major-version-bump-wont-i-end-up-at-version-4200-very-rapidly)
+Semver's [FAQ](https://semver.org/#if-even-the-tiniest-backwards-incompatible-changes-to-the-public-api-require-a-major-version-bump-wont-i-end-up-at-version-4200-very-rapidly) 
 mentions this issue. It suggests proper planning to reduce backward incompatible changes in this phase. Aside from proper planning, these practices might help:
 
 - Avoid rushing into this phase. Whether a piece of software is production-ready is subjective. Consider setting a high bar for production readiness and 
-staying in the [pre-release phase](#pre-release-phase) for longer. That will iron out of more kinks before this phase.
+staying in the [pre-release phase](#pre-release-phase) for longer. That will iron out more kinks before this phase.
 
-- Batch backward incompatible changes. Be cautious though - doing this could cause bug fixes to take longer to reach consumers.
-Consider planning a release cycle so consumers know what to expect.
+- Batch backward incompatible changes. Be cautious though - bug fixes could take longer to reach consumers. 
+Consider planning a release cycle to manage consumer's expectations.
 
 #### Maintenance > Pre-Release > Maintenance Cycle
 Before any release, you can go through the pre-release phase again. Why bother? As [mentioned](#rationale-1), it lets consumers know software isn't 
-production-ready and facilitates quick iterations. After a maintenance > pre-release > maintenance cycle, the version history of a piece of software might look like this:
+production-ready and facilitates quick iterations. After a maintenance > pre-release > maintenance cycle, the version history of a piece of software looks like this:
 
 @{
     "highlightLineRanges": [{"startLineNumber": 1, "endLineNumber": 1}, 
@@ -315,25 +316,25 @@ production-ready and facilitates quick iterations. After a maintenance > pre-rel
         {"region": "maintenance-phase-end-item", "afterContent": "\n..."}]
 }
 
-! A pre-release phase can take place in parallel with a maintenance phase. Two version control branches are required for this. 
+! A pre-release phase can take place in parallel with a maintenance phase. Create two version control branches for this. 
 ! On one, continue fixing bugs for the ongoing maintenance phase. On the other, add new features and tweak the public API in 
-! the pre-release phase for the upcoming release.
+! the pre-release phase.
 
 ## Build Metadata
 When we defined [version number](#version-number), we mentioned the `build_metadata` segment. Version numbers in all 3 of semver’s phases can contain this segment.  
 
 What is it used for? Developers often use continuous integration (CI) systems to build their software. Usually, pushing changes to a specific 
-branch of a repository triggers a CI build. Each CI build produces a [version](#version) of the software, referred to as a CI artifact. Most CI artifacts
-aren’t **published**. For example, in the run-up to version 0.3.0, a developer may push changes several times. Every push generates its own CI 
-artifact. The developer **publishes** only the last one as 0.3.0. Each **unpublished** CI artifact needs a unique version number for identification. This is where `build_metadata` 
-comes in. `build_metadata` usually follows an incrementing format like `YYYYMMDD.<build number for the day>`. Values generated from such a format are unique.
+branch of a repository triggers a CI build. Each CI build produces a [version](#version) of the software, referred to as a CI artifact. Most CI artifacts 
+aren’t **published**. For example, in the run-up to version `0.3.0`, a developer may push changes several times. Every push generates its own CI 
+artifact. The developer **publishes** only the last one as `0.3.0`. Each **unpublished** CI artifact needs a **unique** version number for identification. This is where `build_metadata` 
+comes in. `build_metadata` usually follows an incrementing format like `YYYYMMDD.<build number for the day>`. Values generated from such a format are **unique**. 
 CI builds append `build_metadata` to the upcoming to-be-published version number. E.g., `0.3.0+20190111.4` or `0.3.0+20190114.6`. CI 
 artifacts are thus distinguishable by their `build_metadata`. Also, `build_metadata` link CI artifacts to the builds that produced them.  
 
-You might wonder what developers do with CI artifacts. Often, they use them to test specific commits before publishing a new version. Also, 
+You might wonder what developers do with CI artifacts. Often, they're used to test specific commits before publishing a new version. Also, 
 consumers who urgently need changes made by a commit might use a CI artifact in the interim.  
 
-Including CI artifacts, the version history of a piece of software might look like this: 
+Including CI artifacts, the version history of a piece of software looks like this: 
 
 @{
     "highlightLineRanges": [{"startLineNumber": 6, "endLineNumber": 6}, 
@@ -353,16 +354,16 @@ Including CI artifacts, the version history of a piece of software might look li
 - Marked a feature as deprecated.
 
 2.1.0+20190111.4
-- Commit leading up to 2.1.0.
+- Pushed commits leading up to 2.1.0.
 
 2.1.0+20190111.3
-- Commit leading up to 2.1.0.
+- Pushed commits leading up to 2.1.0.
 
 2.1.0+20190111.2
-- Commit leading up to 2.1.0.
+- Pushed commits leading up to 2.1.0.
 
 2.1.0+20190111.1
-- Commit leading up to 2.1.0.
+- Pushed commits leading up to 2.1.0.
 
 2.0.0
 - Fixed backward incompatible bugs
@@ -374,10 +375,10 @@ Including CI artifacts, the version history of a piece of software might look li
 - Made backward compatible changes.
 
 1.0.0-beta.0+20190109.1
-- Commit leading up to 1.0.0-beta.0.
+- Pushed commits leading up to 1.0.0-beta.0.
 
 1.0.0-beta.0+20190108.3
-- Commit leading up to 1.0.0-beta.0.
+- Pushed commits leading up to 1.0.0-beta.0.
 
 1.0.0-alpha.1
 - Made backward compatible changes.
@@ -388,13 +389,13 @@ Including CI artifacts, the version history of a piece of software might look li
 - Made backward incompatible changes.
 
 0.3.0+20190105.1
-- Commit leading up to 0.3.0.
+- Pushed commits leading up to 0.3.0.
 
 0.3.0+20190104.2
-- Commit leading up to 0.3.0.
+- Pushed commits leading up to 0.3.0.
 
 0.3.0+20190104.1
-- Commit leading up to 0.3.0.
+- Pushed commits leading up to 0.3.0.
 
 0.2.0
 - Made backward compatible changes.
@@ -403,9 +404,13 @@ Including CI artifacts, the version history of a piece of software might look li
 ```
 
 ## Conclusion
-We hope this article has given you a good grasp of semver. Also, we hope we've made it easier to consume Jering software with confidence. Thanks for reading!
+We hope this article has given you a good grasp of semver. Also, we hope we've made it easier to consume Jering software with confidence.
 
-Have questions or spot any mistakes? [Create a Github issue](https://github.com/JeringTech/Website/issues/new). If you found this article useful, consider sharing it! 
+Have questions or spot any mistakes? [Create a Github issue](https://github.com/JeringTech/Website/issues/new). If you found this article useful, consider sharing it:
+- [share it on Twitter](https://twitter.com/intent/tweet?via=JeringTech&url=https://www.jering.tech//articles/semantic-versioning-in-practice&hashtags=semver)
+- [share it on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.jering.tech//articles/semantic-versioning-in-practice)
+
+Thanks for reading!
 
 ## References
 - [Tom Preston-Werner](http://tom.preston-werner.com/) 2013, *https://semver.org/spec/v2.0.0.html*, accessed 15 January 2019.
