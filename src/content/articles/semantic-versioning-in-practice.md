@@ -1,5 +1,5 @@
 ﻿---
-mimo_pageDescription: Semantic versioning (semver) is the standard system for versioning software with public APIs. In this article, we describe how you can use semver in practice. Along the way, we explain why you'd use it.
+mimo_pageDescription: A good grasp of semantic versioning (semver) is a must for software developers. In this article, we explain in simple terms, everything you need to know to use semver effectively. 
 mimo_pageTitle: Semantic Versioning in Practice
 mimo_pageID: semantic-versioning-in-practice
 mimo_date: Jan 15, 2019
