@@ -3,9 +3,10 @@ mimo_pageDescription: Jering is a software company based in Singapore. Here at J
 mimo_pageTitle: Home
 mimo_pageID: home
 mimo_isDisplay: true
-mimo_fbCardType: website
+mimo_ogType: website
 mimo_cardTitle: Jering
-mimo_cardDescription: The home of Jering.
+mimo_twitterCardType: summary_large_image
+mimo_twitterCardImageRelPath: /resources/logo_wide.png
 mimo_additionalFontPreloads:
   - /resources/open-sans-v15-latin-700.woff2
 ---
