@@ -422,7 +422,7 @@ Including CI artifacts, the version history of a piece of software looks like th
 We hope this article has given you a good grasp of semver. Also, we hope we've made it easier to consume Jering software with confidence.
 
 Have questions or spot any mistakes? [Create a Github issue](https://github.com/JeringTech/Website/issues/new). If you found this article useful, consider sharing it on:
-- [Twitter](https://twitter.com/intent/tweet?via=JeringTech&url=https://www.jering.tech/articles/semantic-versioning-in-practice&hashtags=semver,semanticversioning,versioning,devops,programming,softwaredevelopment)
+- [Twitter](https://twitter.com/intent/tweet?via=JeringTech&url=https://www.jering.tech/articles/semantic-versioning-in-practice&hashtags=semver,semanticversioning,versioning,devops,programming)
 - [Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.jering.tech/articles/semantic-versioning-in-practice)
 
 Thanks for reading!
