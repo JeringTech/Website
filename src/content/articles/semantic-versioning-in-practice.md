@@ -100,19 +100,34 @@ mimo_additionalFontPreloads:
 #endregion
 -->
 
-A good grasp of [semantic versioning](https://semver.org/) (semver) is a must for software developers. In this article, we explain in simple terms, everything you need to 
+A good grasp of [semantic versioning](https://semver.org/) (semver) is a must for most software developers. In this article, we explain in simple terms, everything you need to 
 know to use semver effectively. Also, we provide insights into our use of semver here at Jering.
+
+## Why is a Good Grasp of Semver a Must for Most?
+
+You might be wonder why a good grasp of semver is a *must* for most. Here's the thing - just about every major package manager mandates or 
+prefers semver. The list includes:
+- [Cargo](https://doc.rust-lang.org/cargo/reference/manifest.html#the-version-field) for rust
+  > Cargo bakes in the concept of Semantic Versioning...
+- [Nuget](https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/versioning) for .Net 
+  > CONSIDER using SemVer 2.0.0 to version your NuGet package...
+- [NPM](https://docs.npmjs.com/about-semantic-versioning) for Javascript
+  > Following the semantic versioning spec helps other developers who depend on your code understand the extent of changes in a 
+  > given version, and adjust their own code if necessary...
+
+A good grasp of semver is a *must* for *responsible versioning of software* in many ecosystems. Now that we've gotten
+that out of the way, let's dive in.
 
 ## Terminology
 We must first define key semver terms:
 ### Public API 
 A piece of software's *public API* is the part of its surface area publically exposed for programmatic access. E.g., the *public API* of a:
-- library could refer to its public members
-- command line application could refer to the commands it accepts
-- web service could refer to a REST API
+- library refers to its public members
+- command line application refers to the commands it accepts
+- web service refers to a REST API
 ### Private Code
 A piece of software's *private code* is the part of its code it doesn't publically expose. E.g., the *private code* of a:
-- library could refer to its private classes and members
+- library refers to its private classes and members
 - command line application could include business logic
 - web service could include a repository layer
 ### Version 
