@@ -103,10 +103,8 @@ mimo_additionalFontPreloads:
 A good grasp of [semantic versioning](https://semver.org/) (semver) is a must for most software developers. In this article, we explain in simple terms, everything you need to 
 know to use semver effectively. Also, we provide insights into our use of semver here at Jering.
 
-## Why is a Good Grasp of Semver a Must for Most?
-
-You might be wonder why a good grasp of semver is a *must* for most. Here's the thing - just about every major package manager mandates or 
-prefers semver. The list includes:
+## Why's a Good Grasp of Semver a Must for Most?
+Here's the thing - almost every big package manager mandates or recommends semver. The list includes:
 - [Cargo](https://doc.rust-lang.org/cargo/reference/manifest.html#the-version-field) for rust
   > Cargo bakes in the concept of Semantic Versioning...
 - [Nuget](https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/versioning) for .Net 
@@ -133,7 +131,7 @@ A piece of software's *private code* is the part of its code it doesn't publical
 ### Version 
 A *version* is a snapshot of a piece of software.
 ### Backward Compatible 
-The phrase *backward compatible* describes [version](#version)s. A version can be *backward compatible* with an earlier version. This is when its [public API](#public-api) is **equal to** 
+The phrase *backward compatible* describes [versions](#version). A version can be *backward compatible* with an earlier version. This is when its [public API](#public-api) is **equal to** 
 or a **super-set** of the earlier version's public API. In short, a version is *backward compatible* with an earlier version if it can substitute for it. 
 A version that:
 - **only adds** public API features **is** *backward compatible* with its preceding version
@@ -159,14 +157,14 @@ A *pre-release* is a non-production-ready [version](#version) that closely prece
 Using semver to version the wrong software is an all too common source of frustration. 
 Semver **[can't version](https://semver.org/#spec-item-1)** software that doesn't declare a [public API](#public-api). 
 
-Software **that declares** a public API include libraries 
-and command line applications. Software **that doesn't declare** a public API include many games and websites. 
-Consider a blog; unlike a library, it has no public API. Other pieces of software cannot access it programmatically. As such, [version](#version)s of a blog can't be 
-[backward compatible](#backward-compatible) or incompatible. As we'll [explain](#rules-2), semver [version number](#version-number)s depend on backward compatibility. 
+Software **that declare** a public API include libraries 
+and command line applications. Software **that don't declare** a public API include many games and websites. 
+Consider a blog; unlike a library, it has no public API. Other pieces of software cannot access it programmatically. As such, [versions](#version) of a blog can't be 
+[backward compatible](#backward-compatible) or incompatible. As we'll [explain](#rules-2), semver [version numbers](#version-number) depend on backward compatibility. 
 Because of this dependence, semver can't version software like blogs.
 
 ## [Initial Development Phase](https://semver.org/#how-should-i-deal-with-revisions-in-the-0yz-initial-development-phase)
-Now we've explained the basics, let's move on to the use of semver. Semver has 3 phases: 
+Now that we've explained the basics, let's move on to the use of semver. Semver has 3 phases: 
 *initial development*, [*pre-release*](#pre-release-phase), and [*production*](#production-phase). We begin with the initial 
 development phase.
 
@@ -192,14 +190,14 @@ are [backward compatible](#backward-compatible). At the end of this phase, the [
 
 #### Rationale
 - Keeping [major version](#major-version) at 0 lets consumers know software is a long way from production-ready.
-- Incrementing only minor version is simple, and so, convenient for quick iterations. Also, doing so does not compromise on an ordered history.
+- Incrementing only minor version is simple, and so, convenient for quick iterations. Also, doing so doesn't compromise on an ordered history.
 
 ## [Pre-Release Phase](https://semver.org/#spec-item-9)
 
 ### Description
 A piece of software is in this phase when it's working toward a [release](#release). 
 Changes to its [public API](#public-api) are likely and it might be unstable. It isn't production-ready. 
-[Version](#version)s in this phase are [pre-release](#pre-release)s.  
+[Versions](#version) in this phase are [pre-releases](#pre-release).  
 
 This phase can occur after the [initial development phase](#initial-development-phase) or a [production phase](#production-phase). After the 
 initial development phase, a piece of software works toward the `1.0.0` release. After a production phase, it could 
@@ -209,7 +207,7 @@ work toward any release. E.g., `2.0.0`, `3.21.0`, or `4.5.1`.
 
 ### Semver in this Phase
 #### Rules
-[Version number](#version-number)s in this phase must be of the form `major.minor.patch-pre_release_identifiers`. 
+[Version numbers](#version-number) in this phase must be of the form `major.minor.patch-pre_release_identifiers`. 
 `major.minor.patch` must be the version number of the release the software is working toward. E.g., `1.0.0-alpha.0`, `3.1.3-beta.3` or `4.5.1-rc.1`. 
 Only increment pre-release identifiers for each subsequent version number. 
 Do this regardless of whether changes are [backward compatible](#backward-compatible). At the end of this phase, the version history of a piece of software looks like this:
@@ -231,9 +229,9 @@ Do this regardless of whether changes are [backward compatible](#backward-compat
 <!-- TODO ! What does it mean to *increment pre-release identifiers*? We'll clarify this in the section on [version number precedence](#version-number-precedence). -->
 
 #### Rationale
-- Appending pre-release identifiers lets consumers know software isn't production-ready. 
-Also, it lets consumers know software has attained some stability relative to the initial development phase.
-- Incrementing only pre-release identifiers is simple, and so, convenient for quick iterations. Also, doing so does not compromise on an ordered history.
+- Pre-release identifiers let consumers know software isn't production-ready. 
+Also, they let consumers know software has attained some stability relative to the initial development phase.
+- Incrementing only pre-release identifiers is simple, and so, convenient for quick iterations. Also, doing so doesn't compromise on an ordered history.
 
 ### Notes
 #### Demarcating the Initial Development and Pre-Release Phases
@@ -247,15 +245,15 @@ It's a good idea to **define** and **articulate** a marker so consumers know 
 Apart from being a good marker, we find that locking features helps us complete projects.
 
 #### Pre-Release Sub-Phases
-Semver doesn't specify pre-release sub-phases. Developers often use the alpha, beta, and rc (release candidate) sub-phase **names**. But these do not represent **standardized** sub-phases. 
-The lack of standardization has caused trouble. In [Angular 2+](https://angular.io/)'s early days, rc [version](#version)s received many [backward incompatible](#backward-incompatible) changes. This caused a 
+Semver doesn't specify pre-release sub-phases. Developers often use the alpha, beta, and rc (release candidate) sub-phase **names**. But these don't represent **standardized** sub-phases. 
+The lack of standardization has caused trouble. In [Angular 2+](https://angular.io/)'s early days, rc [versions](#version) received many [backward incompatible](#backward-incompatible) changes. This caused a 
 [backlash](https://www.reddit.com/r/Angular2/comments/4x23ae/eli5_why_are_new_featuresmajor_changes_being/) from developers expecting stable public APIs.
 
 It's a good idea to **define** sub-phases and **articulate** their definitions. Here at Jering, a piece of our software is in the:
 - Alpha sub-phase while its **features are incomplete** and its **architecture hasn't stabilized**.
 - Beta sub-phase when it's past alpha but still **needs rigorous testing and optimizing**.
 
-We do not use the rc sub-phase.  
+We don't use the rc sub-phase.  
 
 @{"type": "warning"}
 ! Software development can be hard to predict. So it isn't **always** possible to stick to these definitions. Nonetheless, they help manage our consumer's expectations.
@@ -267,11 +265,11 @@ What should `pre_release_identifiers` be for each sub-phase? Semver doesn't spec
 
 ### Description
 A piece of software is in this phase when it's production-ready. It likely has consumers in production, so [backward compatibility](#backward-compatible) 
-matters. [Version](#version)s in this phase are [release](#release)s. 
+matters. [Versions](#version) in this phase are [releases](#release). 
 
 ### Semver in this Phase
 #### Rules
-[Version number](#version-number)s in this phase must be of the form `major.minor.patch`. `major` must be larger than 0. E.g., `1.0.0` or `6.7.2`. Increment version numbers according to the following rules:
+[Version numbers](#version-number) in this phase must be of the form `major.minor.patch`. `major` must be larger than 0. E.g., `1.0.0` or `6.7.2`. Increment version numbers according to the following rules:
 - If a version makes only backward compatible **bug fixes**, increment [patch version](#patch-version).
 - If a version makes only backward compatible **changes** and at least one of them **isn't a bug fix**, increment [minor version](#minor-version) and set patch version to 0.
 - If a version makes **any** backward incompatible changes, increment [major version](#major-version) and set both minor and patch version to 0.
@@ -303,10 +301,10 @@ At the end of this phase, the version history of a piece of software looks like 
 #### Rationale
 - This phase's version numbers let consumers know software is production-ready.
 - Major version rules make it easy for consumers to figure out whether versions are backward compatible. 
-This, in turn, makes it easy for them to update software to the latest version that **does not break their software**.  
+This, in turn, makes it easy for them to update software to the latest version that **doesn't break their software**.  
 
   Before semver, developers used all sorts of versioning systems. There was no standard way to tell whether versions were backward compatible. This made updating dependencies dangerous. 
-Semver mitigates that danger. Some argue that semver isn't useful because not everyone follows its rules. Consider traffic rules; delinquents flout them, sometimes 
+Semver *lessens* that danger. Some argue that semver isn't useful because not everyone follows its rules. Consider traffic rules; delinquents flout them, sometimes 
 with tragic consequences. But most still abide by them because doing so keeps us safer. Likewise, following semver's rules keeps us safer, 
 regardless of what others do.
 - Minor and patch version rules give consumers granular control. Some consumers find this useful.
@@ -315,7 +313,7 @@ regardless of what others do.
 
 #### Excessive Major Version Increments
 Developers often associate [major version](#major-version) increments with significant changes and rewrites. Incrementing major version for small changes might seem odd. 
-What's more, doing so could cause major version to balloon. [Version number](#version-number)s like `42.0.0` might occur. That said, incrementing major version for every [backward incompatible](#backward-incompatible)
+What's more, doing so could cause major version to balloon. [Version numbers](#version-number) like `42.0.0` might occur. That said, incrementing major version for every [backward incompatible](#backward-incompatible)
 change is **critical**. Not doing so could **break consumers in production**.
 
 Semver's [FAQ](https://semver.org/#if-even-the-tiniest-backwards-incompatible-changes-to-the-public-api-require-a-major-version-bump-wont-i-end-up-at-version-4200-very-rapidly) 
@@ -346,7 +344,7 @@ production-ready and facilitates quick iterations. After a production > pre-rele
 
 ! A pre-release phase can take place in parallel with a production phase. Create two version control branches for this. 
 ! On one, continue fixing bugs for the ongoing production phase. On the other, add new features and tweak the public API in 
-! the pre-release phase.
+! a pre-release phase.
 
 ## Build Metadata
 When we defined [version number](#version-number), we mentioned the `build_metadata` segment. Version numbers in all 3 of semver's phases can contain this segment.  
@@ -437,7 +435,7 @@ Including CI artifacts, the version history of a piece of software looks like th
 We hope this article has given you a good grasp of semver. Also, we hope we've made it easier to consume Jering software with confidence.
 
 Have questions or spot any mistakes? [Create a Github issue](https://github.com/JeringTech/Website/issues/new). If you found this article useful, consider sharing it on:
-- [Twitter](https://twitter.com/intent/tweet?via=JeringTech&url=https://www.jering.tech/articles/semantic-versioning-in-practice&hashtags=semver,semanticversioning,versioning,devops,programming)
+- [Twitter](https://twitter.com/intent/tweet?url=https://www.jering.tech/articles/semantic-versioning-in-practice&text=Semantic+Versioning+in+Practice%0A%0Avia+%40JeringTech%0A%0A%23semver+%23semanticversioning+%23versioning+%23devops+%23programming)
 - [Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.jering.tech/articles/semantic-versioning-in-practice)
 
 Thanks for reading!
