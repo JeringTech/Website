@@ -1,5 +1,5 @@
 ﻿---
-mimo_pageDescription: A good grasp of semantic versioning (semver) is a must for most software developers. In this article, we explain in simple terms, everything you need to know to use semver effectively. 
+mimo_pageDescription: In this article, we explain in simple terms, everything you need to know to use semantic versioning (semver) effectively. 
 mimo_pageTitle: Semantic Versioning in Practice
 mimo_pageID: semantic-versioning-in-practice
 mimo_date: Jan 15, 2019
